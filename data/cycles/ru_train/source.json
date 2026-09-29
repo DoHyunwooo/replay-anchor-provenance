@@ -1,0 +1,35 @@
+{
+  "source": "wikimedia/wikipedia",
+  "config": "20231101.ru",
+  "split": "train",
+  "language": "러시아어",
+  "study": "LAB_NOTES 9장 다회차 연구 전용",
+  "role": "cycle 학습용",
+  "method": "스트림 처음부터 순서대로, 글마다 토큰+eos를 이어 붙여 512토큰 블록으로 자름. 글 하나는 앞에서부터 최대 20 x 512토큰만 쓰고 끝에 eos. 글 종류로 빼지 않음.",
+  "n_docs": 353,
+  "capped_docs": 112,
+  "first_titles": [
+    "Литва",
+    "Россия",
+    "Слоновые",
+    "Мамонты",
+    "Красная книга",
+    "Соционика",
+    "Школа",
+    "Лингвистика",
+    "Социология",
+    "Киевская Русь"
+  ],
+  "first_id": "7",
+  "last_id": "610",
+  "text_stats": {
+    "chars": 3739157,
+    "nonspace_chars": 3222409,
+    "whitespace_words": 495274,
+    "chars_per_token": 1.902
+  },
+  "n_blocks": 3840,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m",
+  "created_at": "2026-09-26T00:21:57"
+}

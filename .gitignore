@@ -1,0 +1,53 @@
+# --- 모델 가중치: 체크포인트 폴더는 제외하고, 9장 다회차 연구의 작은 학습 기록만 남긴다 ---
+checkpoints/**
+!checkpoints/**/
+!checkpoints/cycles/**/run_config.json
+!checkpoints/cycles/**/train_summary.json
+!checkpoints/cycles/**/train_log.jsonl
+
+# --- 데이터 캐시 (다시 만들 수 있음, 용량 큼): 메타데이터만 남긴다 ---
+data/**
+!data/**/
+!data/cycles/build_report.json
+!data/cycles/replay_seeds.json
+!data/cycles/**/source.json
+!data/en_heldout_*/source.json
+data/**/*_parts/
+
+# --- 이전 단계(run01~04) 결과: 논문(9장)에 쓰지 않고 lm-eval 로그에 로컬 경로가 들어 있음 ---
+results/fp16/
+results/fp32/
+results/**/_stale/
+
+# --- 내부 문서 (arXiv·공개 저장소에 넣지 않음) ---
+internal/
+
+# --- 백업·임시·빌드 ---
+*.bak
+*.bak[0-9]*
+*.bak_*
+_tmp*/
+__pycache__/
+*.pyc
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.out
+paper/*.xdv
+paper/*.toc
+paper/*.zip
+# (paper/overleaf.zip = Overleaf 업로드용 묶음; paper/main.zip = 예전 PDF만 든 묶음. 둘 다 저장소에 넣지 않음)
+
+# --- 가상환경·도구·편집기 ---
+.venv/
+venv/
+env/
+pythia-env/
+.tools/
+.vscode/
+.idea/
+.claude/
+
+# --- 초기 스모크 테스트 결과 (논문과 무관) ---
+results_smoke/
+gpu_log.csv

@@ -1,0 +1,158 @@
+{
+  "source": "wikimedia/wikipedia",
+  "config": "20231101.ko",
+  "split": "train",
+  "language": "한국어",
+  "study": "LAB_NOTES 9장 다회차 연구 전용",
+  "role": "held-out (학습에 안 씀)",
+  "method": "학습용 마지막 글의 다음 글부터 스트림 순서대로, 글마다 앞에서부터 최대 4블록이 후보. 512토큰 미만 글은 건너뜀. 후보 블록의 13-gram 중 10% 초과가 학습 데이터에 있으면 빼고 다음 후보로 채움 (글 종류로는 빼지 않음).",
+  "n_docs": 176,
+  "blocks_per_doc": {
+    "min": 1,
+    "max": 4
+  },
+  "skipped_short_docs": 6,
+  "first_titles": [
+    "고려대학교",
+    "안중근",
+    "유덕화",
+    "물리학자",
+    "오에 겐자부로",
+    "안톤 브루크너",
+    "프리드리히 니체",
+    "투아타라",
+    "뱀목",
+    "악어"
+  ],
+  "first_id": "829",
+  "last_id": "1628",
+  "overlap_with_train": {
+    "article_id": 0,
+    "title": 0,
+    "identical_block": 0
+  },
+  "contamination_rule": {
+    "max_block_ngram_overlap": 0.1,
+    "candidates": 730,
+    "dropped_blocks": 330,
+    "dropped_rate": 0.4521,
+    "docs_with_dropped_blocks": 140,
+    "dropped_examples": [
+      {
+        "title": "유덕화",
+        "block_in_doc": 2,
+        "overlap_rate": 0.18
+      },
+      {
+        "title": "사원수",
+        "block_in_doc": 2,
+        "overlap_rate": 0.184
+      },
+      {
+        "title": "GW 베이직",
+        "block_in_doc": 0,
+        "overlap_rate": 0.13
+      },
+      {
+        "title": "12월 31일",
+        "block_in_doc": 0,
+        "overlap_rate": 0.11
+      },
+      {
+        "title": "12월 31일",
+        "block_in_doc": 2,
+        "overlap_rate": 0.262
+      },
+      {
+        "title": "12월 31일",
+        "block_in_doc": 3,
+        "overlap_rate": 0.222
+      },
+      {
+        "title": "12월 30일",
+        "block_in_doc": 0,
+        "overlap_rate": 0.108
+      },
+      {
+        "title": "12월 30일",
+        "block_in_doc": 2,
+        "overlap_rate": 0.184
+      },
+      {
+        "title": "12월 30일",
+        "block_in_doc": 3,
+        "overlap_rate": 0.154
+      },
+      {
+        "title": "1월 2일",
+        "block_in_doc": 2,
+        "overlap_rate": 0.116
+      },
+      {
+        "title": "1월 2일",
+        "block_in_doc": 3,
+        "overlap_rate": 0.222
+      },
+      {
+        "title": "1월 3일",
+        "block_in_doc": 0,
+        "overlap_rate": 0.188
+      },
+      {
+        "title": "1월 7일",
+        "block_in_doc": 0,
+        "overlap_rate": 0.106
+      },
+      {
+        "title": "1월 7일",
+        "block_in_doc": 1,
+        "overlap_rate": 0.106
+      },
+      {
+        "title": "1월 7일",
+        "block_in_doc": 2,
+        "overlap_rate": 0.132
+      },
+      {
+        "title": "1월 7일",
+        "block_in_doc": 3,
+        "overlap_rate": 0.232
+      },
+      {
+        "title": "1월 5일",
+        "block_in_doc": 0,
+        "overlap_rate": 0.126
+      },
+      {
+        "title": "1월 5일",
+        "block_in_doc": 2,
+        "overlap_rate": 0.102
+      },
+      {
+        "title": "1월 5일",
+        "block_in_doc": 3,
+        "overlap_rate": 0.238
+      },
+      {
+        "title": "1월 6일",
+        "block_in_doc": 0,
+        "overlap_rate": 0.134
+      }
+    ]
+  },
+  "diagnostic_ngram_overlap": {
+    "heldout_ngram_overlap_rate": 0.05368,
+    "heldout_blocks_with_any_overlap": 396,
+    "max_block_overlap_rate": 0.1
+  },
+  "text_stats": {
+    "chars": 146493,
+    "nonspace_chars": 112547,
+    "whitespace_words": 30949,
+    "chars_per_token": 0.715
+  },
+  "n_blocks": 400,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m",
+  "created_at": "2026-09-26T00:21:33"
+}

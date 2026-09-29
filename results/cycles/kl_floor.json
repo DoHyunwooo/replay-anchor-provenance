@@ -1,0 +1,49 @@
+{
+  "what": "KL(교사 fp16 ‖ 학생 fp32+bf16 autocast), 학생과 교사가 같은 가중치. 학습 첫 스텝의 복습 KL과 같은 조건.",
+  "created_at": "2026-09-27T21:38:50",
+  "limit": null,
+  "sets": {
+    "latest_s42": {
+      "teacher_and_student": "checkpoints/cycles/trunk_fresh_s42/c3_ru",
+      "replay": "data/cycles/branches/trunk_fresh_s42/latest_full_replay",
+      "n_blocks": 960,
+      "positions_per_block": 511,
+      "mean_kl_nats_per_token": 0.001718010568833961,
+      "sd_across_blocks": 0.0008589435275417762,
+      "min_block": 1.595420326339081e-05,
+      "max_block": 0.006962142419070005
+    },
+    "base_s42": {
+      "teacher_and_student": "EleutherAI/pythia-410m",
+      "replay": "data/cycles/branches/trunk_fresh_s42/base_full_replay",
+      "n_blocks": 960,
+      "positions_per_block": 511,
+      "mean_kl_nats_per_token": 0.02126424598779219,
+      "sd_across_blocks": 0.005225445200898325,
+      "min_block": 0.0032217074185609818,
+      "max_block": 0.04529694840312004
+    },
+    "latest_s43": {
+      "teacher_and_student": "checkpoints/cycles/trunk_fresh_s43/c3_ru",
+      "replay": "data/cycles/branches/trunk_fresh_s43/latest_full_replay",
+      "n_blocks": 960,
+      "positions_per_block": 511,
+      "mean_kl_nats_per_token": 0.002653691200713541,
+      "sd_across_blocks": 0.001818725119081109,
+      "min_block": -1.4949843318845524e-07,
+      "max_block": 0.016721388325095177
+    },
+    "base_s43": {
+      "teacher_and_student": "EleutherAI/pythia-410m",
+      "replay": "data/cycles/branches/trunk_fresh_s43/base_full_replay",
+      "n_blocks": 960,
+      "positions_per_block": 511,
+      "mean_kl_nats_per_token": 0.02075730539933526,
+      "sd_across_blocks": 0.0053779421533711414,
+      "min_block": 0.0016278951661661267,
+      "max_block": 0.04308580234646797
+    }
+  },
+  "latest_mean": 0.002185850884773751,
+  "base_mean": 0.021010775693563723
+}

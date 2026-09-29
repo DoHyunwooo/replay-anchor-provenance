@@ -1,0 +1,41 @@
+{
+  "init": "checkpoints/cycles\\trunk_fresh_s43\\c3_ru",
+  "new_data": "data/cycles/el_train",
+  "new_n": 3840,
+  "replay": [
+    "data/cycles\\branches\\trunk_fresh_s43\\base_full_replay"
+  ],
+  "replay_n": 960,
+  "replay_loss": "kl",
+  "new_repeat": 0,
+  "seed": 43,
+  "out": "checkpoints/cycles\\branches\\trunk_fresh_s43\\base_kl",
+  "lr": 1.5e-05,
+  "warmup_steps": 10,
+  "max_steps": 150,
+  "logging_steps": 1,
+  "init_resolved": "checkpoints/cycles\\trunk_fresh_s43\\c3_ru",
+  "epoch_steps": 150,
+  "n_new_blocks": 3840,
+  "n_replay_blocks": 960,
+  "n_repeat_blocks": 0,
+  "repeat_indices_first10": [],
+  "batch_size": 4,
+  "grad_accum": 16,
+  "lr_schedule": "constant_with_warmup",
+  "optimizer": "adamw_bnb_8bit (cycle마다 새로)",
+  "save_dtype": "float16 (끝에서 한 번)",
+  "kl_teacher": "EleutherAI/pythia-410m",
+  "kl_teacher_check": {
+    "teacher": "EleutherAI/pythia-410m",
+    "teacher_fp_at_generation": "hub:EleutherAI/pythia-410m",
+    "teacher_fp_now": "hub:EleutherAI/pythia-410m",
+    "teacher_fp_match": true,
+    "tokenizer_vocab_same": true,
+    "architecture_same": true,
+    "replay_source_seed": 4373000,
+    "replay_source_created_at": "2026-09-27T03:02:16"
+  },
+  "micro_batch": 2,
+  "comparison": "matched-data objective comparison: 짝이 되는 NTP arm과 같은 데이터·순서·스텝·LR·시드, 목적 함수만 다름 (복습 블록: NTP 대신 teacher 대비 위치별 전체 어휘 forward KL)"
+}

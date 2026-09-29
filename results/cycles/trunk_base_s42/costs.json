@@ -1,0 +1,56 @@
+{
+  "c1_ko": {
+    "gen_gpu_seconds": 310.9,
+    "gen_tokens": 491520,
+    "gen_categories": {
+      "영어 산문": 781,
+      "코드": 128,
+      "비영어": 5,
+      "기타": 46
+    },
+    "gen_from": "EleutherAI/pythia-410m",
+    "train_seconds": 298.1,
+    "train_tokens": 2457600,
+    "new_tokens": 1966080,
+    "replay_tokens": 491520,
+    "train_steps": 150,
+    "peak_gpu_gib": 5.92,
+    "eval_seconds_last_run": 6.8
+  },
+  "c2_ja": {
+    "gen_gpu_seconds": 311.2,
+    "gen_tokens": 491520,
+    "gen_categories": {
+      "영어 산문": 777,
+      "코드": 126,
+      "비영어": 7,
+      "기타": 50
+    },
+    "gen_from": "EleutherAI/pythia-410m",
+    "train_seconds": 293.3,
+    "train_tokens": 2457600,
+    "new_tokens": 1966080,
+    "replay_tokens": 491520,
+    "train_steps": 150,
+    "peak_gpu_gib": 5.92,
+    "eval_seconds_last_run": 6.8
+  },
+  "c3_ru": {
+    "gen_gpu_seconds": 305.8,
+    "gen_tokens": 491520,
+    "gen_categories": {
+      "영어 산문": 795,
+      "코드": 118,
+      "비영어": 6,
+      "기타": 41
+    },
+    "gen_from": "EleutherAI/pythia-410m",
+    "train_seconds": 291.9,
+    "train_tokens": 2457600,
+    "new_tokens": 1966080,
+    "replay_tokens": 491520,
+    "train_steps": 150,
+    "peak_gpu_gib": 5.92,
+    "eval_seconds_last_run": 6.9
+  }
+}

@@ -1,0 +1,230 @@
+[
+  {
+    "out": "data/cycles\\trunk_fresh_s42\\c1_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4201000,
+    "seed_end": 4201020,
+    "registered_at": "2026-09-26T11:34:44"
+  },
+  {
+    "out": "data/cycles\\trunk_fresh_s42\\c2_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s42\\c1_ko",
+    "seed_start": 4202000,
+    "seed_end": 4202020,
+    "registered_at": "2026-09-26T12:08:10"
+  },
+  {
+    "out": "data/cycles\\trunk_fresh_s42\\c3_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s42\\c2_ja",
+    "seed_start": 4203000,
+    "seed_end": 4203020,
+    "registered_at": "2026-09-26T12:41:25"
+  },
+  {
+    "out": "data/cycles\\trunk_fresh_s43\\c1_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4301000,
+    "seed_end": 4301020,
+    "registered_at": "2026-09-26T13:14:36"
+  },
+  {
+    "out": "data/cycles\\trunk_fresh_s43\\c2_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s43\\c1_ko",
+    "seed_start": 4302000,
+    "seed_end": 4302020,
+    "registered_at": "2026-09-26T13:47:46"
+  },
+  {
+    "out": "data/cycles\\trunk_fresh_s43\\c3_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s43\\c2_ja",
+    "seed_start": 4303000,
+    "seed_end": 4303020,
+    "registered_at": "2026-09-26T14:20:59"
+  },
+  {
+    "out": "data/cycles\\trunk_base_s42\\c1_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4251000,
+    "seed_end": 4251040,
+    "registered_at": "2026-09-27T00:15:43"
+  },
+  {
+    "out": "data/cycles\\trunk_base_s42\\c2_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4252000,
+    "seed_end": 4252040,
+    "registered_at": "2026-09-27T00:27:10"
+  },
+  {
+    "out": "data/cycles\\trunk_base_s42\\c3_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4253000,
+    "seed_end": 4253040,
+    "registered_at": "2026-09-27T00:38:29"
+  },
+  {
+    "out": "data/cycles\\trunk_base_s43\\c1_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4351000,
+    "seed_end": 4351040,
+    "registered_at": "2026-09-27T00:49:47"
+  },
+  {
+    "out": "data/cycles\\trunk_base_s43\\c2_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4352000,
+    "seed_end": 4352040,
+    "registered_at": "2026-09-27T01:01:06"
+  },
+  {
+    "out": "data/cycles\\trunk_base_s43\\c3_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4353000,
+    "seed_end": 4353040,
+    "registered_at": "2026-09-27T01:12:37"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\latest_full_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s42\\c3_ru",
+    "seed_start": 4271000,
+    "seed_end": 4271040,
+    "registered_at": "2026-09-27T01:24:13",
+    "reused_by": [
+      {
+        "trunk": "trunk_fresh_s42",
+        "arm": "latest_kl",
+        "objective": "kl",
+        "reason": "C4 matched-data objective comparison: 형제 분기(NTP arm)가 쓴 복습을 KL로 다시 씀. 재사용 금지 규칙은 학생이 이미 학습한 복습을 막는 것이고, 이 복습은 분기 출발점 M_3가 학습한 적 없음 (명시적 예외, 2026-09-27)"
+      }
+    ]
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\latest_ep_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s42\\c3_ru",
+    "seed_start": 4272000,
+    "seed_end": 4272800,
+    "registered_at": "2026-09-27T01:35:46"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\base_full_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4273000,
+    "seed_end": 4273040,
+    "registered_at": "2026-09-27T01:51:59",
+    "reused_by": [
+      {
+        "trunk": "trunk_fresh_s42",
+        "arm": "base_kl",
+        "objective": "kl",
+        "reason": "C4 matched-data objective comparison: 형제 분기(NTP arm)가 쓴 복습을 KL로 다시 씀. 재사용 금지 규칙은 학생이 이미 학습한 복습을 막는 것이고, 이 복습은 분기 출발점 M_3가 학습한 적 없음 (명시적 예외, 2026-09-27)"
+      }
+    ]
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\base_ep_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4274000,
+    "seed_end": 4274800,
+    "registered_at": "2026-09-27T02:03:49"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\latest_full_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s43\\c3_ru",
+    "seed_start": 4371000,
+    "seed_end": 4371040,
+    "registered_at": "2026-09-27T02:22:52",
+    "reused_by": [
+      {
+        "trunk": "trunk_fresh_s43",
+        "arm": "latest_kl",
+        "objective": "kl",
+        "reason": "C4 matched-data objective comparison: 형제 분기(NTP arm)가 쓴 복습을 KL로 다시 씀. 재사용 금지 규칙은 학생이 이미 학습한 복습을 막는 것이고, 이 복습은 분기 출발점 M_3가 학습한 적 없음 (명시적 예외, 2026-09-27)"
+      }
+    ]
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\latest_ep_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s43\\c3_ru",
+    "seed_start": 4372000,
+    "seed_end": 4372800,
+    "registered_at": "2026-09-27T02:42:39"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\base_full_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4373000,
+    "seed_end": 4373040,
+    "registered_at": "2026-09-27T02:56:59",
+    "reused_by": [
+      {
+        "trunk": "trunk_fresh_s43",
+        "arm": "base_kl",
+        "objective": "kl",
+        "reason": "C4 matched-data objective comparison: 형제 분기(NTP arm)가 쓴 복습을 KL로 다시 씀. 재사용 금지 규칙은 학생이 이미 학습한 복습을 막는 것이고, 이 복습은 분기 출발점 M_3가 학습한 적 없음 (명시적 예외, 2026-09-27)"
+      }
+    ]
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\base_ep_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4374000,
+    "seed_end": 4374800,
+    "registered_at": "2026-09-27T03:08:29"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\m1_full_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s42\\c1_ko",
+    "seed_start": 4275000,
+    "seed_end": 4275040,
+    "registered_at": "2026-09-27T13:23:43"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\m2_full_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s42\\c2_ja",
+    "seed_start": 4276000,
+    "seed_end": 4276040,
+    "registered_at": "2026-09-27T13:35:42"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\mix_base_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4277000,
+    "seed_end": 4277020,
+    "registered_at": "2026-09-27T13:47:22"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s42\\mix_m3_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s42\\c3_ru",
+    "seed_start": 4278000,
+    "seed_end": 4278020,
+    "registered_at": "2026-09-27T13:50:13"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\m1_full_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s43\\c1_ko",
+    "seed_start": 4375000,
+    "seed_end": 4375040,
+    "registered_at": "2026-09-27T13:59:49"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\m2_full_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s43\\c2_ja",
+    "seed_start": 4376000,
+    "seed_end": 4376040,
+    "registered_at": "2026-09-27T14:11:25"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\mix_base_replay",
+    "model": "EleutherAI/pythia-410m",
+    "seed_start": 4377000,
+    "seed_end": 4377020,
+    "registered_at": "2026-09-27T14:22:57"
+  },
+  {
+    "out": "data/cycles\\branches\\trunk_fresh_s43\\mix_m3_replay",
+    "model": "checkpoints/cycles\\trunk_fresh_s43\\c3_ru",
+    "seed_start": 4378000,
+    "seed_end": 4378020,
+    "registered_at": "2026-09-27T14:25:43"
+  }
+]

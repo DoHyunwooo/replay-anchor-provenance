@@ -1,0 +1,158 @@
+{
+  "source": "wikimedia/wikipedia",
+  "config": "20231101.el",
+  "split": "train",
+  "language": "그리스어",
+  "study": "LAB_NOTES 9장 다회차 연구 전용",
+  "role": "held-out (학습에 안 씀)",
+  "method": "학습용 마지막 글의 다음 글부터 스트림 순서대로, 글마다 앞에서부터 최대 4블록이 후보. 512토큰 미만 글은 건너뜀. 후보 블록의 13-gram 중 10% 초과가 학습 데이터에 있으면 빼고 다음 후보로 채움 (글 종류로는 빼지 않음).",
+  "n_docs": 152,
+  "blocks_per_doc": {
+    "min": 1,
+    "max": 4
+  },
+  "skipped_short_docs": 14,
+  "first_titles": [
+    "1885",
+    "1888",
+    "Νέα Υόρκη",
+    "14 Φεβρουαρίου",
+    "17 Φεβρουαρίου",
+    "Παρισινή Κομμούνα",
+    "Γαλλοπρωσικός Πόλεμος",
+    "Ναπολέων Γ΄",
+    "Σοσιαλισμός",
+    "Σαρλ Φουριέ"
+  ],
+  "first_id": "1253",
+  "last_id": "1818",
+  "overlap_with_train": {
+    "article_id": 0,
+    "title": 0,
+    "identical_block": 0
+  },
+  "contamination_rule": {
+    "max_block_ngram_overlap": 0.1,
+    "candidates": 1000,
+    "dropped_blocks": 600,
+    "dropped_rate": 0.6,
+    "docs_with_dropped_blocks": 215,
+    "dropped_examples": [
+      {
+        "title": "1880",
+        "block_in_doc": 0,
+        "overlap_rate": 0.364
+      },
+      {
+        "title": "1880",
+        "block_in_doc": 1,
+        "overlap_rate": 0.486
+      },
+      {
+        "title": "1880",
+        "block_in_doc": 2,
+        "overlap_rate": 0.524
+      },
+      {
+        "title": "1880",
+        "block_in_doc": 3,
+        "overlap_rate": 0.51
+      },
+      {
+        "title": "1881",
+        "block_in_doc": 0,
+        "overlap_rate": 0.252
+      },
+      {
+        "title": "1881",
+        "block_in_doc": 1,
+        "overlap_rate": 0.214
+      },
+      {
+        "title": "1881",
+        "block_in_doc": 2,
+        "overlap_rate": 0.532
+      },
+      {
+        "title": "1881",
+        "block_in_doc": 3,
+        "overlap_rate": 0.522
+      },
+      {
+        "title": "1882",
+        "block_in_doc": 0,
+        "overlap_rate": 0.182
+      },
+      {
+        "title": "1882",
+        "block_in_doc": 1,
+        "overlap_rate": 0.108
+      },
+      {
+        "title": "1882",
+        "block_in_doc": 2,
+        "overlap_rate": 0.36
+      },
+      {
+        "title": "1882",
+        "block_in_doc": 3,
+        "overlap_rate": 0.38
+      },
+      {
+        "title": "1883",
+        "block_in_doc": 0,
+        "overlap_rate": 0.158
+      },
+      {
+        "title": "1883",
+        "block_in_doc": 1,
+        "overlap_rate": 0.226
+      },
+      {
+        "title": "1883",
+        "block_in_doc": 2,
+        "overlap_rate": 0.578
+      },
+      {
+        "title": "1883",
+        "block_in_doc": 3,
+        "overlap_rate": 0.436
+      },
+      {
+        "title": "1884",
+        "block_in_doc": 0,
+        "overlap_rate": 0.264
+      },
+      {
+        "title": "1884",
+        "block_in_doc": 1,
+        "overlap_rate": 0.23
+      },
+      {
+        "title": "1884",
+        "block_in_doc": 2,
+        "overlap_rate": 0.43
+      },
+      {
+        "title": "1884",
+        "block_in_doc": 3,
+        "overlap_rate": 0.586
+      }
+    ]
+  },
+  "diagnostic_ngram_overlap": {
+    "heldout_ngram_overlap_rate": 0.02543,
+    "heldout_blocks_with_any_overlap": 337,
+    "max_block_overlap_rate": 0.1
+  },
+  "text_stats": {
+    "chars": 346170,
+    "nonspace_chars": 293522,
+    "whitespace_words": 51454,
+    "chars_per_token": 1.69
+  },
+  "n_blocks": 400,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m",
+  "created_at": "2026-09-26T00:22:09"
+}

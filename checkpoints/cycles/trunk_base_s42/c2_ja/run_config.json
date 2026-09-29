@@ -1,0 +1,28 @@
+{
+  "init": "checkpoints/cycles\\trunk_base_s42\\c1_ko",
+  "new_data": "data/cycles/ja_train",
+  "new_n": 3840,
+  "replay": [
+    "data/cycles\\trunk_base_s42\\c2_replay"
+  ],
+  "replay_n": 960,
+  "replay_loss": "ntp",
+  "new_repeat": 0,
+  "seed": 42,
+  "out": "checkpoints/cycles\\trunk_base_s42\\c2_ja",
+  "lr": 1.5e-05,
+  "warmup_steps": 10,
+  "max_steps": 150,
+  "logging_steps": 1,
+  "init_resolved": "checkpoints/cycles\\trunk_base_s42\\c1_ko",
+  "epoch_steps": 150,
+  "n_new_blocks": 3840,
+  "n_replay_blocks": 960,
+  "n_repeat_blocks": 0,
+  "repeat_indices_first10": [],
+  "batch_size": 4,
+  "grad_accum": 8,
+  "lr_schedule": "constant_with_warmup",
+  "optimizer": "adamw_bnb_8bit (cycle마다 새로)",
+  "save_dtype": "float16 (끝에서 한 번)"
+}

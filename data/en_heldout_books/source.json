@@ -1,0 +1,27 @@
+{
+  "source": "emozilla/pg19 (deepmind/pg19의 parquet 복제본)",
+  "split": "test",
+  "file": "data/test-00000-of-00001-29a571947c0b5ccc.parquet",
+  "method": "책마다 본문 20% 지점 다음 문단부터 연속 512토큰 블록. 책마다 1블록씩 돌아가며 뽑아 400개 (책당 최대 20).",
+  "n_docs": 100,
+  "blocks_per_book": {
+    "min": 4,
+    "max": 4
+  },
+  "first_titles": [
+    "Reminiscences of Pioneer Days in St. Paul by Frank Moore",
+    "Dragon's blood by Henry Milner Rideout",
+    "Travels in Morocco Volume 2 by James Richardson",
+    "Impressions of Theophrastus Such by George Eliot",
+    "Odd Craft Part 4: Bill's Lapse by W.W. Jacobs",
+    "The S. W. F. Club by Caroline E. Jacobs",
+    "Frank Merriwell Down South by Burt L. Standish",
+    "Critical Miscellanies (Vol. 2 of 3) by John Morley",
+    "From Sand Hill to Pine by Bret Harte",
+    "Child's Health Primer For Primary Classes by Jane Andrews"
+  ],
+  "note": "BookCorpus(LAMBADA 계열)는 일부러 제외. PG-19는 1919년 이전 책이라 LAMBADA의 현대 소설과 문체가 다를 수 있고, Pile(Pythia 사전학습)에 PG-19가 들어 있어 사전학습 때 본 책일 수 있음.",
+  "n_blocks": 400,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m"
+}

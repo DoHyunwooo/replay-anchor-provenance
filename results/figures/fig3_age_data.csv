@@ -1,0 +1,11 @@
+trunk_seed,arm,anchor_age,english_mean_pct,mid_mean_pct_vs_M3,posthoc_base_plus_anchor_drift
+42,latest_full,0,37.479,6.517,36.145
+42,m2_full,1,26.266,7.598,26.523
+42,m1_full,2,18.481,5.765,18.713
+42,base_full,3,11.502,8.886,11.502
+42,mix,,15.489,8.133,
+43,latest_full,0,36.833,6.266,35.565
+43,m2_full,1,27.464,7.034,25.654
+43,m1_full,2,21.965,8.261,18.917
+43,base_full,3,11.986,7.411,11.986
+43,mix,,16.697,6.103,

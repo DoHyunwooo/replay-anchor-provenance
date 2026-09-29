@@ -1,0 +1,11 @@
+tag,model,metric,value,n_blocks,dtype,ckpt_fp,data_fp,evaluated_at
+c0_base,EleutherAI/pythia-410m,kl_base_ckpt,0.000000,50,float16,hub:EleutherAI/pythia-410m,sha256:8e61d1ebd6b671da#idx0:400:8,2026-09-26T11:03:56
+c0_base,EleutherAI/pythia-410m,kl_ckpt_base,0.000000,50,float16,hub:EleutherAI/pythia-410m,sha256:8e61d1ebd6b671da#idx0:400:8,2026-09-26T11:03:56
+c0_base,EleutherAI/pythia-410m,param_dist,0.000000,0,float16,hub:EleutherAI/pythia-410m,,2026-09-26T11:03:56
+c0_base,EleutherAI/pythia-410m,ppl_el,6.401599,400,float16,hub:EleutherAI/pythia-410m,sha256:dc5f4ebbcedc9840,2026-09-26T11:03:56
+c0_base,EleutherAI/pythia-410m,ppl_en_books,18.269400,400,float16,hub:EleutherAI/pythia-410m,sha256:54434eb1e54edeae,2026-09-26T11:03:30
+c0_base,EleutherAI/pythia-410m,ppl_en_web,24.059770,400,float16,hub:EleutherAI/pythia-410m,sha256:90e018d00fb872d7,2026-09-26T11:03:35
+c0_base,EleutherAI/pythia-410m,ppl_en_wiki,14.226921,400,float16,hub:EleutherAI/pythia-410m,sha256:8e61d1ebd6b671da,2026-09-26T11:03:24
+c0_base,EleutherAI/pythia-410m,ppl_ja,11.735189,400,float16,hub:EleutherAI/pythia-410m,sha256:3e03e4b375e070d6,2026-09-26T11:03:46
+c0_base,EleutherAI/pythia-410m,ppl_ko,7.960056,400,float16,hub:EleutherAI/pythia-410m,sha256:46a092fd92c94569,2026-09-26T11:03:40
+c0_base,EleutherAI/pythia-410m,ppl_ru,9.547922,400,float16,hub:EleutherAI/pythia-410m,sha256:3813af4a5999de84,2026-09-26T11:03:51

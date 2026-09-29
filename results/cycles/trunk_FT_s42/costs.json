@@ -1,0 +1,29 @@
+{
+  "c1_ko": {
+    "train_seconds": 237.2,
+    "train_tokens": 1966080,
+    "new_tokens": 1966080,
+    "replay_tokens": 0,
+    "train_steps": 120,
+    "peak_gpu_gib": 5.92,
+    "eval_seconds_last_run": 53.2
+  },
+  "c2_ja": {
+    "train_seconds": 235.3,
+    "train_tokens": 1966080,
+    "new_tokens": 1966080,
+    "replay_tokens": 0,
+    "train_steps": 120,
+    "peak_gpu_gib": 5.92,
+    "eval_seconds_last_run": 54.8
+  },
+  "c3_ru": {
+    "train_seconds": 238.6,
+    "train_tokens": 1966080,
+    "new_tokens": 1966080,
+    "replay_tokens": 0,
+    "train_steps": 120,
+    "peak_gpu_gib": 5.92,
+    "eval_seconds_last_run": 53.8
+  }
+}

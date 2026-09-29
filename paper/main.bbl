@@ -1,0 +1,173 @@
+\begin{thebibliography}{20}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abbes et~al.(2026)Abbes, Subbaraj, Riemer, Islah, Tabaru, Kingetsu,
+  Chandar, and Rish]{abbes2026}
+Istabrak Abbes, Gopeshh Subbaraj, Matthew Riemer, Nizar Islah, Tsuguchika
+  Tabaru, Hiroaki Kingetsu, Sarath Chandar, and Irina Rish.
+\newblock {Revisiting Replay and Gradient Alignment for Continual Pre-Training
+  of Large Language Models}.
+\newblock In \emph{Proceedings of the 4th Conference on Lifelong Learning
+  Agents}, volume 330 of \emph{Proceedings of Machine Learning Research}, pages
+  465--486, 2026.
+
+\bibitem[Atreya et~al.(2026)Atreya, Batra, Mantri, Bantug, Cowan, and
+  Khraishi]{atreya2026}
+Alankar Atreya, Devesh Batra, Yoages~Kumar Mantri, Geremy Bantug, Greig~A.
+  Cowan, and Raad Khraishi.
+\newblock {When to Review: Spaced Repetition for Continual Pre-Training of
+  Language Models}.
+\newblock arXiv:2608.17530, 2026.
+
+\bibitem[Biderman et~al.(2023)Biderman, Schoelkopf, Anthony, Bradley, O'Brien,
+  Hallahan, Khan, Purohit, Prashanth, Raff, Skowron, Sutawika, and Van
+  Der~Wal]{biderman2023}
+Stella Biderman, Hailey Schoelkopf, Quentin~Gregory Anthony, Herbie Bradley,
+  Kyle O'Brien, Eric Hallahan, Mohammad~Aflah Khan, Shivanshu Purohit,
+  Usvsn~Sai Prashanth, Edward Raff, Aviya Skowron, Lintang Sutawika, and Oskar
+  Van Der~Wal.
+\newblock {Pythia: A Suite for Analyzing Large Language Models Across Training
+  and Scaling}.
+\newblock In \emph{Proceedings of the 40th International Conference on Machine
+  Learning}, volume 202 of \emph{Proceedings of Machine Learning Research},
+  pages 2397--2430, 2023.
+
+\bibitem[Chen et~al.(2026{\natexlab{a}})Chen, Razin, Narasimhan, and
+  Chen]{chen2026retaining}
+Howard Chen, Noam Razin, Karthik Narasimhan, and Danqi Chen.
+\newblock {Retaining by Doing: The Role of On-Policy Data in Mitigating
+  Forgetting}.
+\newblock In \emph{Proceedings of the 43rd International Conference on Machine
+  Learning (ICML)}, 2026{\natexlab{a}}.
+\newblock arXiv:2510.18874.
+
+\bibitem[Chen et~al.(2026{\natexlab{b}})Chen, Zhu, Zhang, Chen, Huang, Xu, and
+  Wang]{chen2026onpolicy}
+Yan Chen, Taojie Zhu, Meng Zhang, Xin Chen, Jiaqi Huang, Dongyang Xu, and Yizhi
+  Wang.
+\newblock {On-Policy Replay for Continual Supervised Fine-Tuning}.
+\newblock arXiv:2605.29495, 2026{\natexlab{b}}.
+
+\bibitem[Fedus et~al.(2020)Fedus, Ramachandran, Agarwal, Bengio, Larochelle,
+  Rowland, and Dabney]{fedus2020}
+William Fedus, Prajit Ramachandran, Rishabh Agarwal, Yoshua Bengio, Hugo
+  Larochelle, Mark Rowland, and Will Dabney.
+\newblock {Revisiting Fundamentals of Experience Replay}.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, volume
+  119 of \emph{Proceedings of Machine Learning Research}, pages 3061--3071,
+  2020.
+
+\bibitem[Feng et~al.(2026)Feng, Wang, Li, Chu, Kang, Liu, Wang, Yu, and
+  Wu]{feng2026}
+Yujie Feng, Hao Wang, Jian Li, Xu~Chu, Zhaolu Kang, Yiran Liu, Yasha Wang,
+  Philip~S. Yu, and Xiao-Ming Wu.
+\newblock {FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model
+  Continual Learning}.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics (ACL), Volume 1: Long Papers}, pages 24945--24965, 2026.
+\newblock \doi{10.18653/v1/2026.acl-long.1144}.
+
+\bibitem[Huang et~al.(2024)Huang, Cui, Wang, Yang, Liao, Song, Yao, and
+  Su]{huang2024}
+Jianheng Huang, Leyang Cui, Ante Wang, Chengyi Yang, Xinting Liao, Linfeng
+  Song, Junfeng Yao, and Jinsong Su.
+\newblock {Mitigating Catastrophic Forgetting in Large Language Models with
+  Self-Synthesized Rehearsal}.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics (ACL), Volume 1: Long Papers}, pages 1416--1428, 2024.
+\newblock \doi{10.18653/v1/2024.acl-long.77}.
+
+\bibitem[Kotha and Liang(2026)]{kotha2026}
+Suhas Kotha and Percy Liang.
+\newblock {Replaying Pre-Training Data Improves Fine-Tuning}.
+\newblock arXiv preprint arXiv:2603.04964, 2026.
+
+\bibitem[Liu et~al.(2026)Liu, Chen, Zhou, Tu, and Manoharan]{liu2026}
+Chi Liu, Xin Chen, Xu~Zhou, Fangbo Tu, and Srinivasan Manoharan.
+\newblock {Self-Distillation as a Performance Recovery Mechanism for LLMs:
+  Counteracting Compression and Catastrophic Forgetting}.
+\newblock arXiv:2604.15794, 2026.
+
+\bibitem[Mahdaviyeh et~al.(2026)Mahdaviyeh, Lucas, Ren, Tolias, Zemel, and
+  Pitassi]{mahdaviyeh2026}
+Yasaman Mahdaviyeh, James Lucas, Mengye Ren, Andreas~S. Tolias, Richard Zemel,
+  and Toniann Pitassi.
+\newblock {Replay Can Provably Increase Forgetting}.
+\newblock In \emph{Proceedings of the 4th Conference on Lifelong Learning
+  Agents}, volume 330 of \emph{Proceedings of Machine Learning Research}, pages
+  15--42, 2026.
+
+\bibitem[Marek et~al.(2026)Marek, Cho, Qiu, Chunara, Izmailov, and
+  Wilson]{marek2026}
+Martin Marek, Dongkyu Cho, Shikai Qiu, Rumi Chunara, Pavel Izmailov, and
+  Andrew~Gordon Wilson.
+\newblock {Forgetting in Language Models: Capacity, Optimization, and
+  Self-Generated Replay}.
+\newblock arXiv:2605.26097, 2026.
+
+\bibitem[Masip et~al.(2025)Masip, Rodriguez, Tuytelaars, and van~de
+  Ven]{masip2025}
+Sergi Masip, Pau Rodriguez, Tinne Tuytelaars, and Gido~M. van~de Ven.
+\newblock {Continual Learning of Diffusion Models with Generative
+  Distillation}.
+\newblock In \emph{Proceedings of The 3rd Conference on Lifelong Learning
+  Agents}, volume 274 of \emph{Proceedings of Machine Learning Research}, pages
+  431--456, 2025.
+
+\bibitem[Rae et~al.(2020)Rae, Potapenko, Jayakumar, Hillier, and
+  Lillicrap]{rae2020}
+Jack~W. Rae, Anna Potapenko, Siddhant~M. Jayakumar, Chloe Hillier, and
+  Timothy~P. Lillicrap.
+\newblock {Compressive Transformers for Long-Range Sequence Modelling}.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2020.
+
+\bibitem[Raffel et~al.(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena,
+  Zhou, Li, and Liu]{raffel2020}
+Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael
+  Matena, Yanqi Zhou, Wei Li, and Peter~J. Liu.
+\newblock {Exploring the Limits of Transfer Learning with a Unified
+  Text-to-Text Transformer}.
+\newblock \emph{Journal of Machine Learning Research}, 21\penalty0
+  (140):\penalty0 1--67, 2020.
+
+\bibitem[Resta and Bacciu(2024)]{resta2024}
+Michele Resta and Davide Bacciu.
+\newblock {Self-generated Replay Memories for Continual Neural Machine
+  Translation}.
+\newblock In \emph{North American Chapter of the Association for Computational
+  Linguistics (NAACL)}, pages 175--191, 2024.
+\newblock \doi{10.18653/v1/2024.naacl-long.10}.
+
+\bibitem[Shenfeld et~al.(2025)Shenfeld, Pari, and Agrawal]{shenfeld2025}
+Idan Shenfeld, Jyothish Pari, and Pulkit Agrawal.
+\newblock {RL's Razor: Why Online Reinforcement Learning Forgets Less}.
+\newblock arXiv:2509.04259, 2025.
+
+\bibitem[Shumailov et~al.(2024)Shumailov, Shumaylov, Zhao, Papernot, Anderson,
+  and Gal]{shumailov2024}
+Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson,
+  and Yarin Gal.
+\newblock {AI Models Collapse When Trained on Recursively Generated Data}.
+\newblock \emph{Nature}, 631\penalty0 (8022):\penalty0 755--759, 2024.
+\newblock \doi{10.1038/s41586-024-07566-y}.
+
+\bibitem[Wang et~al.(2026)Wang, Zhao, Liu, Yang, Liu, Guo, Xie, Meng, Liu, and
+  Zhu]{wang2026}
+Meng Wang, Haohan Zhao, Wenzhuo Liu, Lu~Yang, Geng Liu, Haiyang Guo, Guo-Sen
+  Xie, Gaofeng Meng, Hongbin Liu, and Fei Zhu.
+\newblock {Denser $\neq$ Better: Limits of On-Policy Self-Distillation for
+  Continual Post-Training}.
+\newblock arXiv:2607.01763, 2026.
+
+\bibitem[Zhang et~al.(2026)Zhang, Zhang, Khashabi, and Shu]{zhang2026}
+Zheyuan Zhang, Alvin Zhang, Daniel Khashabi, and Tianmin Shu.
+\newblock {Continual Learning Mechanisms Compose for Long-Horizon
+  Memorization}.
+\newblock arXiv:2609.06986, 2026.
+
+\end{thebibliography}

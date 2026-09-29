@@ -1,0 +1,126 @@
+[
+  {
+    "lang": "ko",
+    "train_docs": 407,
+    "capped": 89,
+    "held_docs": 176,
+    "overlap": {
+      "article_id": 0,
+      "title": 0,
+      "identical_block": 0
+    },
+    "candidates": 730,
+    "dropped": 330,
+    "drop_rate": 0.4520547945205479,
+    "diag": {
+      "heldout_ngram_overlap_rate": 0.05368,
+      "heldout_blocks_with_any_overlap": 396,
+      "max_block_overlap_rate": 0.1
+    },
+    "train_stats": {
+      "chars": 1381447,
+      "nonspace_chars": 1059098,
+      "whitespace_words": 301558,
+      "chars_per_token": 0.703
+    },
+    "held_stats": {
+      "chars": 146493,
+      "nonspace_chars": 112547,
+      "whitespace_words": 30949,
+      "chars_per_token": 0.715
+    }
+  },
+  {
+    "lang": "ja",
+    "train_docs": 361,
+    "capped": 111,
+    "held_docs": 128,
+    "overlap": {
+      "article_id": 0,
+      "title": 0,
+      "identical_block": 0
+    },
+    "candidates": 411,
+    "dropped": 11,
+    "drop_rate": 0.0267639902676399,
+    "diag": {
+      "heldout_ngram_overlap_rate": 0.01267,
+      "heldout_blocks_with_any_overlap": 215,
+      "max_block_overlap_rate": 0.1
+    },
+    "train_stats": {
+      "chars": 1863506,
+      "nonspace_chars": 1765596,
+      "whitespace_words": 66901,
+      "chars_per_token": 0.948
+    },
+    "held_stats": {
+      "chars": 197057,
+      "nonspace_chars": 186883,
+      "whitespace_words": 7051,
+      "chars_per_token": 0.962
+    }
+  },
+  {
+    "lang": "ru",
+    "train_docs": 353,
+    "capped": 112,
+    "held_docs": 110,
+    "overlap": {
+      "article_id": 0,
+      "title": 0,
+      "identical_block": 0
+    },
+    "candidates": 406,
+    "dropped": 6,
+    "drop_rate": 0.014778325123152709,
+    "diag": {
+      "heldout_ngram_overlap_rate": 0.01275,
+      "heldout_blocks_with_any_overlap": 252,
+      "max_block_overlap_rate": 0.1
+    },
+    "train_stats": {
+      "chars": 3739157,
+      "nonspace_chars": 3222409,
+      "whitespace_words": 495274,
+      "chars_per_token": 1.902
+    },
+    "held_stats": {
+      "chars": 383646,
+      "nonspace_chars": 327901,
+      "whitespace_words": 52333,
+      "chars_per_token": 1.873
+    }
+  },
+  {
+    "lang": "el",
+    "train_docs": 375,
+    "capped": 76,
+    "held_docs": 152,
+    "overlap": {
+      "article_id": 0,
+      "title": 0,
+      "identical_block": 0
+    },
+    "candidates": 1000,
+    "dropped": 600,
+    "drop_rate": 0.6,
+    "diag": {
+      "heldout_ngram_overlap_rate": 0.02543,
+      "heldout_blocks_with_any_overlap": 337,
+      "max_block_overlap_rate": 0.1
+    },
+    "train_stats": {
+      "chars": 3099111,
+      "nonspace_chars": 2636457,
+      "whitespace_words": 451732,
+      "chars_per_token": 1.576
+    },
+    "held_stats": {
+      "chars": 346170,
+      "nonspace_chars": 293522,
+      "whitespace_words": 51454,
+      "chars_per_token": 1.69
+    }
+  }
+]

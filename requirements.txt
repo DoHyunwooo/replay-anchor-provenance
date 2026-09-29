@@ -1,0 +1,17 @@
+# Python 3.12.10, Windows 11, CUDA 12.1 (versions actually used for all runs)
+# torch must come from the CUDA wheel index:
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+transformers==5.17.0
+datasets==5.0.1
+accelerate==1.15.0
+bitsandbytes==0.50.2
+huggingface_hub==1.32.0
+safetensors==0.8.0
+tokenizers==0.23.2
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+matplotlib==3.11.2
+# optional: downstream evaluation (eval_cycle.py --lm_eval, earlier single-stage phase)
+lm_eval==0.4.13

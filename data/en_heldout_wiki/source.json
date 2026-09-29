@@ -1,0 +1,41 @@
+{
+  "source": "wikimedia/wikipedia",
+  "config": "20231101.en",
+  "split": "train",
+  "method": "data/en_replay에 쓴 글 바로 다음 글부터 스트림 순서대로, 글마다 토큰+eos를 앞에서부터 512토큰 블록으로 잘라 최대 4블록 (주제 다양성 확보). 512토큰 미만인 글은 건너뜀.",
+  "n_docs": 114,
+  "blocks_per_doc": {
+    "min": 1,
+    "max": 4,
+    "docs_with_max": 86
+  },
+  "skipped_short_docs": 10,
+  "first_titles": [
+    "Andrey Markov",
+    "Angst",
+    "Anxiety",
+    "A. A. Milne",
+    "Asociación Alumni",
+    "Axiom",
+    "Alpha",
+    "Alvin Toffler",
+    "The Amazing Spider-Man",
+    "AM"
+  ],
+  "version": "v2 (2026-09-25). v1은 글을 이어 붙이는 방식이라 글 40개뿐이었음",
+  "first_id": "915",
+  "last_id": "1196",
+  "replay_check": {
+    "replay_articles": 175,
+    "replay_last_title": "Author",
+    "replay_reproduced_exactly": true,
+    "overlap": {
+      "article_id": 0,
+      "title": 0,
+      "identical_block": 0
+    }
+  },
+  "n_blocks": 400,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m"
+}

@@ -1,0 +1,39 @@
+group,checkpoint,probe_kl_base_ckpt,param_dist,english_mean_pct
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_FT_s42/c1_ko,0.119573,0.003932,11.273
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_FT_s42/c2_ja,0.132377,0.006706,12.09
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_FT_s42/c3_ru,0.173404,0.008669,16.577
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_FT_s43/c1_ko,0.116959,0.004207,11.566
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_FT_s43/c2_ja,0.135355,0.007084,11.978
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_FT_s43/c3_ru,0.178285,0.008997,16.548
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_fresh_s42/c1_ko,0.079378,0.003859,7.211
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_fresh_s42/c2_ja,0.141939,0.006072,15.021
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_fresh_s42/c3_ru,0.211361,0.007972,24.643
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_fresh_s43/c1_ko,0.075887,0.003783,6.931
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_fresh_s43/c2_ja,0.135974,0.006008,13.669
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_fresh_s43/c3_ru,0.215559,0.007912,23.579
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_base_s42/c1_ko,0.084148,0.003889,7.403
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_base_s42/c2_ja,0.089571,0.006019,8.236
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_base_s42/c3_ru,0.101684,0.007921,9.481
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_base_s43/c1_ko,0.082861,0.003948,7.639
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_base_s43/c2_ja,0.091816,0.006137,8.74
+"trunk checkpoints (FT/fresh/base, c1-c3)",trunk_base_s43/c3_ru,0.106427,0.007954,9.79
+C2 branches,branch_s42/base_ep,0.130028,0.009781,11.374
+C2 branches,branch_s42/base_full,0.133037,0.009763,11.502
+C2 branches,branch_s42/ft150,0.239408,0.010209,25.472
+C2 branches,branch_s42/latest_ep,0.311297,0.00998,36.52
+C2 branches,branch_s42/latest_full,0.31559,0.009954,37.479
+C2 branches,branch_s43/base_ep,0.136726,0.009737,11.554
+C2 branches,branch_s43/base_full,0.134508,0.009709,11.986
+C2 branches,branch_s43/ft150,0.250896,0.010089,25.221
+C2 branches,branch_s43/latest_ep,0.313099,0.009838,36.196
+C2 branches,branch_s43/latest_full,0.316199,0.009816,36.833
+C3/C4 branches (not in pre-specified set),branch_s42/base_kl,0.079386,0.008531,5.515
+C3/C4 branches (not in pre-specified set),branch_s42/latest_kl,0.22783,0.009617,25.24
+C3/C4 branches (not in pre-specified set),branch_s42/m1_full,0.180993,0.009865,18.481
+C3/C4 branches (not in pre-specified set),branch_s42/m2_full,0.236348,0.009918,26.266
+C3/C4 branches (not in pre-specified set),branch_s42/mix,0.180645,0.009838,15.489
+C3/C4 branches (not in pre-specified set),branch_s43/base_kl,0.091358,0.00844,8.713
+C3/C4 branches (not in pre-specified set),branch_s43/latest_kl,0.224262,0.009489,23.736
+C3/C4 branches (not in pre-specified set),branch_s43/m1_full,0.202553,0.009678,21.965
+C3/C4 branches (not in pre-specified set),branch_s43/m2_full,0.247785,0.009724,27.464
+C3/C4 branches (not in pre-specified set),branch_s43/mix,0.187593,0.009759,16.697

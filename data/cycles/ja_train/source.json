@@ -1,0 +1,35 @@
+{
+  "source": "wikimedia/wikipedia",
+  "config": "20231101.ja",
+  "split": "train",
+  "language": "일본어",
+  "study": "LAB_NOTES 9장 다회차 연구 전용",
+  "role": "cycle 학습용",
+  "method": "스트림 처음부터 순서대로, 글마다 토큰+eos를 이어 붙여 512토큰 블록으로 자름. 글 하나는 앞에서부터 최대 20 x 512토큰만 쓰고 끝에 eos. 글 종류로 빼지 않음.",
+  "n_docs": 361,
+  "capped_docs": 111,
+  "first_titles": [
+    "アンパサンド",
+    "言語",
+    "日本語",
+    "地理学",
+    "EU (曖昧さ回避)",
+    "国の一覧",
+    "パリ",
+    "ヨーロッパ",
+    "生物",
+    "コケ植物"
+  ],
+  "first_id": "5",
+  "last_id": "720",
+  "text_stats": {
+    "chars": 1863506,
+    "nonspace_chars": 1765596,
+    "whitespace_words": 66901,
+    "chars_per_token": 0.948
+  },
+  "n_blocks": 3840,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m",
+  "created_at": "2026-09-26T00:21:44"
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "base",
+  "seed": 43,
+  "langs": [
+    "ko",
+    "ja",
+    "ru"
+  ],
+  "new_n": 3840,
+  "replay_n": 960,
+  "gen_batch": 24,
+  "test": false
+}

@@ -1,0 +1,26 @@
+{
+  "model": "checkpoints/cycles\\trunk_fresh_s43\\c2_ja",
+  "ckpt_fp": "sha256:7281fa37843468d6",
+  "batch_size": 48,
+  "seed": 4303000,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "english_only": false,
+  "method": "eos 하나에서 시작해 512토큰 샘플링, eos에서 멈추지 않음. temperature + top-p만 적용, 패딩 id 차단 (gen_selfgen.py와 같은 샘플링 루프). 배치 b의 시드 = seed + b.",
+  "n_blocks": 960,
+  "block_size": 512,
+  "n_batches": 20,
+  "generated_blocks": 960,
+  "generated_tokens": 491520,
+  "kept_rate": 1.0,
+  "categories_all_generated": {
+    "영어 산문": 683,
+    "코드": 108,
+    "비영어": 113,
+    "기타": 56
+  },
+  "gen_gpu_seconds": 1616.4,
+  "wall_seconds_this_run": 1618.4,
+  "eos_tokens_in_blocks": 551,
+  "created_at": "2026-09-26T14:47:57"
+}

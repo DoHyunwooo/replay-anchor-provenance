@@ -1,0 +1,11 @@
+{
+  "train_seconds": 293.3,
+  "steps": 150,
+  "train_tokens": 2457600,
+  "new_tokens": 1966080,
+  "replay_tokens": 491520,
+  "repeat_tokens": 0,
+  "full_epoch": true,
+  "peak_gpu_gib": 5.92,
+  "finished_at": "2026-09-27T00:37:30"
+}

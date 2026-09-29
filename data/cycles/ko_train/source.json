@@ -1,0 +1,35 @@
+{
+  "source": "wikimedia/wikipedia",
+  "config": "20231101.ko",
+  "split": "train",
+  "language": "한국어",
+  "study": "LAB_NOTES 9장 다회차 연구 전용",
+  "role": "cycle 학습용",
+  "method": "스트림 처음부터 순서대로, 글마다 토큰+eos를 이어 붙여 512토큰 블록으로 자름. 글 하나는 앞에서부터 최대 20 x 512토큰만 쓰고 끝에 eos. 글 종류로 빼지 않음.",
+  "n_docs": 407,
+  "capped_docs": 89,
+  "first_titles": [
+    "지미 카터",
+    "수학",
+    "수학 상수",
+    "문학",
+    "나라 목록",
+    "화학",
+    "체첸 공화국",
+    "맥스웰 방정식",
+    "초월수",
+    "음계"
+  ],
+  "first_id": "5",
+  "last_id": "826",
+  "text_stats": {
+    "chars": 1381447,
+    "nonspace_chars": 1059098,
+    "whitespace_words": 301558,
+    "chars_per_token": 0.703
+  },
+  "n_blocks": 3840,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m",
+  "created_at": "2026-09-26T00:21:33"
+}

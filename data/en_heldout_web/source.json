@@ -1,0 +1,24 @@
+{
+  "source": "allenai/c4",
+  "config": "en",
+  "split": "validation",
+  "file": "en/c4-validation.00000-of-00008.json.gz",
+  "method": "파일 순서대로 문서마다 토큰+eos를 이어 붙여 512토큰으로 자름 (train.py와 동일)",
+  "n_docs": 428,
+  "first_titles": [
+    "https://www.kentlive.news/news/sevenoaks-mum-who-died-after-2582402",
+    "https://jmtd.net/log/geek/linux/ui/",
+    "http://synergistic-technologies.com/biocmeisner.html",
+    "https://www.spineprochiropractic.com/sleep-why-some-people-sleep-easier-than-others-spine-pro-chiropractic-new-richmond-ellsworth/",
+    "https://www.jobable.com/bank-of-china-jobs/hong-kong/assistant-financial-risk-manager-product-control-banking-book-195749",
+    "https://www.barcelona-tourist-guide.com/en/hotels/reviews/citadines-hotel-barcelona.html",
+    "https://butterflyinsight.com/",
+    "https://www.catsailingnews.com/2015/08/fasnet-2015-spindrift-prince-de.html",
+    "https://www.icimo.com/solutions/case-studies/Auction-uncovers-data-in-its-bid-to-gain-insights/",
+    "http://iyaradayspa.com/stretch-therapy/"
+  ],
+  "note": "C4 문서에는 제목이 없어서 first_titles 자리에 URL을 적음",
+  "n_blocks": 400,
+  "block_size": 512,
+  "tokenizer": "EleutherAI/pythia-410m"
+}
