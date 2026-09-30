@@ -23,6 +23,7 @@ import shutil
 SRC = "PAPER_DRAFT.md"
 OUT = "paper"
 FIGS = ["fig1_trunks", "fig2_branches", "fig3_age", "fig4_p5"]
+SLOPPY_PARAS = ("Code, result files",)   # Overfull \hbox가 나던 문단 (저장소 주소, c_check.json, verify_draft.py)
 
 CITES = [  # (마크다운 표현, LaTeX)
     ("Marek et al. (2026, Eq. 1)", r"\citet[Eq.~1]{marek2026}"),
@@ -69,6 +70,7 @@ CAPTIONS = {
 
 BIB = r"""% 서지는 2026-09-29에 원문 페이지(arXiv, ACL Anthology, PMLR, OpenReview)에서 저자가 확인한 값. 미확인 필드가 생기면 항목 위 주석에 "[확인 필요]"로 적는다 (verify_draft.py --release가 잡음).
 % 제목은 모두 {{...}}로 감싸 원래 대소문자를 유지한다 (plainnat이 소문자로 바꾸지 않게).
+% 제목 대소문자는 2026-09-30에 원문(출판판 우선: PMLR·Crossref, 없으면 arXiv API)과 글자 그대로 대조함.
 % 출판판과 arXiv판이 둘 다 있으면 출판 정보를 쓰고 arXiv id는 주석으로만 남긴다 (plainnat은 eprint를 찍지 않음).
 
 % [confirmed] 저자, 제목, arXiv id
@@ -174,7 +176,7 @@ BIB = r"""% 서지는 2026-09-29에 원문 페이지(arXiv, ACL Anthology, PMLR,
 
 % [confirmed] 저자, 제목, arXiv id. 학회 게재는 확인되지 않아 arXiv preprint로 인용 (저자 결정, 2026-09-29)
 @misc{kotha2026,
-  title         = {{Replaying Pre-Training Data Improves Fine-Tuning}},
+  title         = {{Replaying pre-training data improves fine-tuning}},
   author        = {Kotha, Suhas and Liang, Percy},
   year          = {2026},
   eprint        = {2603.04964},
@@ -184,7 +186,7 @@ BIB = r"""% 서지는 2026-09-29에 원문 페이지(arXiv, ACL Anthology, PMLR,
 
 % [confirmed] 저자 전체, 제목, 학회, 쪽 (PMLR 330, pp. 15-42, 2026)
 @inproceedings{mahdaviyeh2026,
-  title     = {{Replay Can Provably Increase Forgetting}},
+  title     = {{Replay can provably increase forgetting}},
   author    = {Mahdaviyeh, Yasaman and Lucas, James and Ren, Mengye and Tolias, Andreas S. and Zemel, Richard and Pitassi, Toniann},
   booktitle = {Proceedings of the 4th Conference on Lifelong Learning Agents},
   series    = {Proceedings of Machine Learning Research},
@@ -236,7 +238,7 @@ BIB = r"""% 서지는 2026-09-29에 원문 페이지(arXiv, ACL Anthology, PMLR,
 
 % [confirmed] 저자 전체, 제목, 학술지, 권·호·쪽, DOI
 @article{shumailov2024,
-  title   = {{AI Models Collapse When Trained on Recursively Generated Data}},
+  title   = {{AI models collapse when trained on recursively generated data}},
   author  = {Shumailov, Ilia and Shumaylov, Zakhar and Zhao, Yiren and Papernot, Nicolas and Anderson, Ross and Gal, Yarin},
   journal = {Nature},
   volume  = {631},
@@ -487,6 +489,9 @@ def main():
         if para.startswith("*Tags used throughout"):
             # 초록 뒤에 둔다 (마크다운에서는 초록 앞에 있음)
             tags_para = r"\noindent{\small " + inline(para.strip("*")) + "}"
+        elif para.startswith(SLOPPY_PARAS):
+            # 긴 주소·파일명이 줄 끝을 넘는 문단: 이 문단에만 \sloppy (다른 쪽 줄바꿈은 그대로)
+            out.append(r"{\sloppy " + inline(para) + r"\par}")
         else:
             out.append(inline(para))
         for key, names in fig_after.items():

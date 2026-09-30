@@ -427,6 +427,7 @@ def tex_to_text(t):
     t = (t.replace(r"\%", "%").replace(r"\&", "&").replace(r"\_", "_").replace("``", '"').replace("''", '"')
          .replace(r"\#", "#").replace("~", " "))
     t = re.sub(r"\\noindent\{\\small ((?:[^{}]|\{[^{}]*\})*)\}", r"\1", t)
+    t = re.sub(r"\{\\sloppy (.*?)\\par\}", r"\1", t, flags=re.S)       # md2tex의 SLOPPY_PARAS 문단
     t = re.sub(r"\$\\(Vert|rho)\$", lambda m: {"Vert": "‖", "rho": "ρ"}[m.group(1)], t)
     return t
 

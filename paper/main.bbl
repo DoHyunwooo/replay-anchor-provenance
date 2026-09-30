@@ -83,7 +83,7 @@ Jianheng Huang, Leyang Cui, Ante Wang, Chengyi Yang, Xinting Liao, Linfeng
 
 \bibitem[Kotha and Liang(2026)]{kotha2026}
 Suhas Kotha and Percy Liang.
-\newblock {Replaying Pre-Training Data Improves Fine-Tuning}.
+\newblock {Replaying pre-training data improves fine-tuning}.
 \newblock arXiv preprint arXiv:2603.04964, 2026.
 
 \bibitem[Liu et~al.(2026)Liu, Chen, Zhou, Tu, and Manoharan]{liu2026}
@@ -96,7 +96,7 @@ Chi Liu, Xin Chen, Xu~Zhou, Fangbo Tu, and Srinivasan Manoharan.
   Pitassi]{mahdaviyeh2026}
 Yasaman Mahdaviyeh, James Lucas, Mengye Ren, Andreas~S. Tolias, Richard Zemel,
   and Toniann Pitassi.
-\newblock {Replay Can Provably Increase Forgetting}.
+\newblock {Replay can provably increase forgetting}.
 \newblock In \emph{Proceedings of the 4th Conference on Lifelong Learning
   Agents}, volume 330 of \emph{Proceedings of Machine Learning Research}, pages
   15--42, 2026.
@@ -152,7 +152,7 @@ Idan Shenfeld, Jyothish Pari, and Pulkit Agrawal.
   and Gal]{shumailov2024}
 Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson,
   and Yarin Gal.
-\newblock {AI Models Collapse When Trained on Recursively Generated Data}.
+\newblock {AI models collapse when trained on recursively generated data}.
 \newblock \emph{Nature}, 631\penalty0 (8022):\penalty0 755--759, 2024.
 \newblock \doi{10.1038/s41586-024-07566-y}.
 
